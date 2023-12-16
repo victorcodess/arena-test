@@ -83,9 +83,9 @@ const SignUp = () => {
           />
         </div>
 
-        <button className="w-[323px] h-[55px] text-white font-medium rounded-[6px] bg-[#2741D7]">
+        <a href="/home"><button className="w-[323px] h-[55px] text-white font-medium rounded-[6px] bg-[#2741D7]">
           Get Started
-        </button>
+        </button></a>
       </div>
 
       <div className="absolute bottom-0 right-0 left-0">
