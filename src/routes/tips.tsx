@@ -5,10 +5,10 @@ import tipThree from "../assets/tip-three.svg";
 
 const Tips = () => {
   return (
-    <main className="flex flex-col items-center justify-center w-full">
+    <main className="flex flex-col items-center justify-center w-full max-w-[550px] mx-auto sm:h-[750px] sm:my-3 sm:rounded-2xl sm:border-4 border-black/50 sm:justify-start">
       <div className="relative flex items-center justify-center w-full h-[238px]">
-        <img src={tipsBg} alt="" className="w-full h-full" />
-        <div className="bg-black/50 w-full h-full z-20 absolute"></div>
+        <img src={tipsBg} alt="" className="w-full h-full sm:rounded-t-xl" />
+        <div className="bg-black/50 w-full h-full z-20 absolute sm:rounded-t-xl"></div>
         <h1 className="absolute heading uppercase text-center font-bold text-white text-[60px] max-w-[317px] leading-[70px] z-30">
           <span className="carnival">Carnival</span> Games
         </h1>

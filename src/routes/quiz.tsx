@@ -21,8 +21,8 @@ const Quiz = () => {
   };
 
   return (
-    <main className="relative">
-      <div className="bg-gradient flex items-center justify-between p-[14px]">
+    <main className="relative max-w-[550px] mx-auto  sm:my-3 sm:pb-5 sm:rounded-2xl sm:border-4 border-black/50">
+      <div className="bg-gradient flex items-center justify-between p-[14px] max-w-[550px] mx-auto sm:rounded-t-xl">
         <h3 className="text-white font-bold manrope tracking-[0.8px]">Carnival Games</h3>
         <a href="/home">
           <div className="flex gap-2 items-center justify-center cursor-pointer">
@@ -32,7 +32,7 @@ const Quiz = () => {
         </a>
       </div>
 
-      <div className="flex items-center justify-between mx-[26px] my-[16px]">
+      <div className="flex max-w-[550px] mx-auto items-center justify-between my-[16px] px-4 sm:px-4">
         <img src={countdown} alt="" className="w-[40px] h-full" />
 
         <h2 className="text-[20px] font-bold text-[#707070] manrope">1/20</h2>
@@ -117,7 +117,7 @@ const Quiz = () => {
 
       {selected && correct && (
         <div
-          className="absolute z-20 top-0 bottom-0 bg-black/30 w-full h-[100vh] right-0 left-0 flex items-center justify-center"
+          className="absolute z-20 top-0 bottom-0 bg-black/30 w-full h-[100vh] sm:h-full sm:rounded-xl right-0 left-0 flex items-center justify-center"
           onClick={() => setSelected(false)}
         >
           <div className="bg-white flex flex-col gap-4 rounded-lg py-6 px-[78px] items-center justify-center">
@@ -139,7 +139,7 @@ const Quiz = () => {
 
       {selected && !correct && (
         <div
-          className="absolute z-20 top-0 bottom-0 bg-black/30 w-full h-[100vh] right-0 left-0 flex items-center justify-center"
+          className="absolute z-20 top-0 bottom-0 bg-black/30 w-full h-[100vh] sm:h-full sm:rounded-xl right-0 left-0 flex items-center justify-center"
           onClick={() => setSelected(false)}
         >
           <div className="bg-white flex flex-col gap-4 rounded-lg py-6 px-[78px] items-center justify-center">

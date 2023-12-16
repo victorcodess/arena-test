@@ -7,10 +7,10 @@ import { useState } from "react";
 const SignUp = () => {
   const [accept, setAccept] = useState(false);
   return (
-    <main className="bg-[#EEF8FF] w-full relative h-[100vh] flex items-center flex-col">
+    <main className="bg-[#EEF8FF] w-full relative h-[100vh] flex items-center flex-col max-w-[550px] mx-auto sm:h-[750px] sm:my-3 sm:rounded-2xl sm:border-4 border-black/50">
       {!accept ? (
-        <div className="w-full h-full absolute bg-black/0 z-20 backdrop-blur-sm flex items-center justify-end flex-col">
-          <div className="bg-[#EEF8FF] w-full flex flex-col items-center justify-center">
+        <div className="w-full h-full absolute bg-black/0 z-20 backdrop-blur-sm flex items-center justify-end flex-col max-w-[550px] mx-auto sm:rounded-3xl">
+          <div className="bg-[#EEF8FF] w-full flex flex-col items-center justify-center sm:rounded-3xl">
             <div className="flex flex-col gap-[11px] pt-[8.46px] pb-[18px]">
               <img
                 src={brandMobile}
@@ -32,7 +32,7 @@ const SignUp = () => {
               </p>
             </div>
 
-            <div className="flex flex-col gap-4 items-center justify-center mb-[70px]">
+            <div className="flex flex-col gap-4 items-center justify-center mb-[70px] sm:mb-[50px]">
               <button
                 className="w-[323px] h-[55px] text-white font-medium rounded-[6px] bg-[#2741D7]"
                 onClick={() => setAccept(true)}
@@ -46,7 +46,8 @@ const SignUp = () => {
           </div>
         </div>
       ) : null}
-      <div className="w-full px-6 pt-10">
+
+      <div className="w-full px-6 pt-10 sm:pt-5 max-w-[450px] mx-auto">
         <div
           className="w-10 h-10 drop-shadow-[0_3px_3px_rgba(0,0,0,0.161)] bg-white rounded-full flex items-center justify-center cursor-pointer"
           onClick={() => setAccept(false)}
@@ -89,7 +90,7 @@ const SignUp = () => {
       </div>
 
       <div className="absolute bottom-0 right-0 left-0">
-        <img src={gift} alt="" className="mx-auto w-full max-w-[500px]" />
+        <img src={gift} alt="" className="mx-auto w-full max-w-[500px] sm:max-w-[550px] rounded-b-xl" />
       </div>
     </main>
   );
