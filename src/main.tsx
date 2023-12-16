@@ -6,6 +6,7 @@ import "./index.css";
 import SignUp from "./routes/sign-up.tsx";
 import Home from "./routes/home.tsx";
 import Tips from "./routes/tips.tsx";
+import Quiz from "./routes/quiz.tsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/tips",
     element: <Tips />,
+  },
+  {
+    path: "/quiz",
+    element: <Quiz />,
   },
 ]);
 

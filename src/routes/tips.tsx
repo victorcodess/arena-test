@@ -14,7 +14,7 @@ const Tips = () => {
         </h1>
       </div>
 
-      <div className="w-full flex flex-col items-center justify-center">
+      <div className="w-full flex flex-col items-center justify-center max-w-[414px]">
         <div className="pt-[21.68px] pb-[116px]">
           <div className="flex gap-2.5 items-center justify-center py-[11px] px-6 border-b border-black/10">
             <img src={tipOne} alt="" className="w-[56px] h-full" />
