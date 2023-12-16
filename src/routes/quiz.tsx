@@ -13,7 +13,7 @@ const Quiz = () => {
   const handleClick = (number: number) => {
     setSelected(true);
 
-    if (number === 2) {
+    if (number === 3) {
       setCorrect(true);
     } else {
       setCorrect(false);
@@ -23,11 +23,11 @@ const Quiz = () => {
   return (
     <main className="relative">
       <div className="bg-gradient flex items-center justify-between p-[14px]">
-        <h3 className="text-white font-bold">Carnival Games</h3>
+        <h3 className="text-white font-bold manrope tracking-[0.8px]">Carnival Games</h3>
         <a href="/home">
           <div className="flex gap-2 items-center justify-center cursor-pointer">
             <img src={close} alt="" className="w-[16px] h-full" />
-            <h3 className="font-medium">Close</h3>
+            <h3 className="font-semibold manrope text-sm">Close</h3>
           </div>
         </a>
       </div>
@@ -35,13 +35,13 @@ const Quiz = () => {
       <div className="flex items-center justify-between mx-[26px] my-[16px]">
         <img src={countdown} alt="" className="w-[40px] h-full" />
 
-        <h2 className="text-[20px] font-bold text-[#707070]">1/20</h2>
+        <h2 className="text-[20px] font-bold text-[#707070] manrope">1/20</h2>
 
-        <h3 className="text-sm text-[#FE971A] font-bold">100pts</h3>
+        <h3 className="text-sm text-[#FE971A] font-bold inter">100 Pts</h3>
       </div>
 
-      <div className="w-[374px] flex items-center justify-center mx-auto mt-[15px]">
-        <h2 className="text-center font-semibold leading-[28px] text-[#333]">
+      <div className="w-[274px] flex items-center justify-center mx-auto mt-[15px]">
+        <h2 className="text-center font-semibold leading-[28px] text-[#333] archivo">
           <span className="text-[#FE971A]">Q1.</span> Which movie won the best
           cinematography in 2022
         </h2>
@@ -53,7 +53,7 @@ const Quiz = () => {
         className="w-[338px] h-full mx-auto mt-[15px]"
       />
 
-      <div className="flex flex-col items-center justify-center gap-4 mt-[27px]">
+      <div className="flex flex-col items-center justify-center gap-4 mt-[27px] inter">
         <div
           className="flex cursor-pointer w-[326px] h-12 border border-[#2741D7]"
           onClick={() => handleClick(1)}
@@ -111,7 +111,7 @@ const Quiz = () => {
         </div>
       </div>
 
-      <h1 className="mt-[23px] drop-shadow-[0_3px_3px_rgba(0,0,0,0.161)] mx-auto heading uppercase text-center font-bold text-[#2741D7] text-[20px] max-w-[91px] leading-[20px]">
+      <h1 className="mt-[23px] drop-shadow-[0_1px_0.5px_rgba(0,0,0,0.25)] mx-auto heading uppercase text-center font-bold text-[#2741D7] text-[20px] max-w-[91px] leading-[20px]">
         <span className="carnival">Carnival</span> Games
       </h1>
 
